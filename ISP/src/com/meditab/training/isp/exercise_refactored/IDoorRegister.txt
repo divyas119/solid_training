@@ -1,0 +1,6 @@
+package ISP;
+
+public interface IDoorRegister {
+
+	void register(Door door);
+}

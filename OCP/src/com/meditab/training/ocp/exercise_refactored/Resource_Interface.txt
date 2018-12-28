@@ -1,0 +1,18 @@
+package ocp;
+
+public class Resource_Interface {
+
+	interface Resource {
+		void markTimeSlotFree(int resourceId);
+
+		void markSpaceSlotFree(int resourceId);
+
+		void markSpaceSlotBusy(int resourceId);
+
+		int findFreeSpaceSlot();
+
+		void markTimeSlotBusy(int resourceId);
+
+		int findFreeTimeSlot();
+	}
+}

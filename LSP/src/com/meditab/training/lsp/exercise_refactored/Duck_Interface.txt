@@ -1,0 +1,10 @@
+package lsp;
+
+public class Duck_Interface {
+
+	interface DuckInterface {
+		void quack();
+
+		void swim();
+	}
+}

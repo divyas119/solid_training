@@ -1,0 +1,14 @@
+package lsp;
+
+import lsp.Duck_Interface.DuckInterface;
+
+public class Duck implements DuckInterface {
+
+	public void quack() {
+		System.out.println("Quack...");
+	}
+
+	public void swim() {
+		System.out.println("Swim...");
+	}
+}
