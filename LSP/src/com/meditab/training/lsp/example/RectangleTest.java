@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class RectangleTest
 {
-    @Test
+    
     public void testSetWidth_Rectangle()
     {
         Rectangle rectangle = new Rectangle();
@@ -16,7 +16,7 @@ public class RectangleTest
         assertEquals(20, rectangle.getArea());
     }
 
-    @Test
+    
     public void testSetWidth_Square()
     {
         Rectangle rectangle = new Square();

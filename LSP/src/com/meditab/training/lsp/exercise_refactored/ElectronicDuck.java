@@ -1,12 +1,8 @@
-package lsp;
+package com.meditab.training.lsp.exercise_refactored;
 
-import lsp.Duck_Interface.DuckInterface;
-
-public class ElectronicDuck implements DuckInterface {
-
+public class ElectronicDuck {
 	private boolean _on = false;
 
-	@Override
 	public void quack() {
 		if (_on) {
 			System.out.println("Electronic duck quack...");
@@ -15,7 +11,6 @@ public class ElectronicDuck implements DuckInterface {
 		}
 	}
 
-	@Override
 	public void swim() {
 		if (_on) {
 			System.out.println("Electronic duck swim");

@@ -1,13 +1,15 @@
-package ISP;
+package com.meditab.training.isp.exercise_refactored;
+
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+public class TimedDoor implements Door {
 
-public class SensingDoor implements Door {
+	private static final int TIME_OUT = 100;
 	private boolean _locked;
 	private boolean _opened;
 
-	public SensingDoor(Sensor sensor) {
-		sensor.register(this);
+	public TimedDoor(Timer timer) {
+		((Timer) timer).register(TIME_OUT, this);
 	}
 
 	@Override
@@ -34,11 +36,11 @@ public class SensingDoor implements Door {
 
 	@Override
 	public void timeOutCallback() {
-		throw new NotImplementedException();
+		_locked = true;
 	}
 
 	@Override
 	public void proximityCallback() {
-		_opened = true;
+		throw new NotImplementedException();
 	}
 }

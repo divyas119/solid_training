@@ -1,4 +1,4 @@
-package ocp;
+package com.meditab.training.ocp.exercise_refactored;
 
 public class ResourceAllocator {
 

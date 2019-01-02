@@ -1,9 +1,6 @@
-package lsp;
+package com.meditab.training.lsp.exercise_refactored;
 
-import lsp.Duck_Interface.DuckInterface;
-
-public class Duck implements DuckInterface {
-
+public class Duck {
 	public void quack() {
 		System.out.println("Quack...");
 	}

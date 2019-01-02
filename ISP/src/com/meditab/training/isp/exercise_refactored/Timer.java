@@ -1,8 +1,8 @@
-package ISP;
+package com.meditab.training.isp.exercise_refactored;
 
 import java.util.TimerTask;
 
-public class Timer implements IDoorRegister {
+public class Timer {
 	public void register(long timeOut, final TimedDoor timedDoor) {
 		java.util.Timer timerUtility = new java.util.Timer();
 		timerUtility.schedule(new TimerTask() {
@@ -12,10 +12,5 @@ public class Timer implements IDoorRegister {
 			}
 		}, timeOut);
 	}
-
-	@Override
-	public void register(Door door) {
-		// TODO Auto-generated method stub
-
-	}
+	
 }

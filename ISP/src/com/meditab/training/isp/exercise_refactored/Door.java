@@ -1,7 +1,7 @@
-package ISP;
-public interface Door
-{
-    void lock();
+package com.meditab.training.isp.exercise_refactored;
+
+public interface Door {
+	void lock();
 
     void unlock();
 

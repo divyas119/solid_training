@@ -1,15 +1,14 @@
-package lsp;
+package com.meditab.training.lsp.exercise_refactored;
 
-public class Pool {
-
+public class Pool implements DuckInterface{
 	public void run() {
 		Duck donaldDuck = new Duck();
 		ElectronicDuck electricDuck = new ElectronicDuck();
-		quack(donaldDuck, electricDuck);
-		swim(donaldDuck, electricDuck);
+		quack();
+		swim();
 	}
 
-	private void swim(Duck donaldDuck, ElectronicDuck electricDuck) {
+	public void swim() {
 		Duck[] ducks = null;
 		for (Duck duck : ducks) {
 			duck.swim();
@@ -17,7 +16,7 @@ public class Pool {
 
 	}
 
-	private void quack(Duck donaldDuck, ElectronicDuck electricDuck) {
+	public void quack() {
 		Duck[] ducks = null;
 		for (Duck duck : ducks) {
 			duck.quack();
@@ -29,5 +28,4 @@ public class Pool {
 		Pool pool = new Pool();
 		pool.run();
 	}
-
 }

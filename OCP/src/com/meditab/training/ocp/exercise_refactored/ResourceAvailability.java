@@ -1,8 +1,7 @@
-package ocp;
+package com.meditab.training.ocp.exercise_refactored;
 
-import ocp.Resource_Interface.Resource;
 
-public class ResourceAvailability implements Resource {
+public class ResourceAvailability implements Resource_Interface {
 
 	public void free(ResourceType resourceType, int resourceId) {
 		switch (resourceType) {
@@ -38,3 +37,5 @@ public class ResourceAvailability implements Resource {
 		return 0;
 	}
 }
+
+

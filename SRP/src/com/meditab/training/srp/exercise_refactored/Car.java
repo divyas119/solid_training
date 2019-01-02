@@ -1,4 +1,4 @@
-package srp;
+package com.meditab.training.srp.exercise_refactored;
 
 public class Car {
 	private final String _id;
